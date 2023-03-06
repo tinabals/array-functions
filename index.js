@@ -30,16 +30,19 @@ function max(numbers) {
         if (number > maxNum) {
             maxNum = number
           }
-          
         })
-        // for (let i = 1; i < numbers.length; i++) {
-            //   if (numbers[i] > max) {
-                //     max = numbers[i];
-                //   }
-    // }
-    // return max;
-    return max
+    return maxNum
 }
 
   
-console.log(max([4, 5, 10, -2, 30]), "hii")
+console.log(max([4, 5, 10, -2, 30]))
+
+
+// Question Five 
+function valTimesIndex(arr) {
+    return arr.map(function(val, index) {
+      return val * index;
+    });
+  }
+
+console.log(  valTimesIndex([2,4,8]))
